@@ -3,7 +3,7 @@ import mdx from '@astrojs/mdx';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: 'https://lecamthanhha.github.io',
+  site: 'https://supetite.github.io',
   base: '/', 
   integrations: [mdx(), tailwind()]
 });
