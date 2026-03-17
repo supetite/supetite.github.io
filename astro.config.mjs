@@ -4,6 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'https://supetite.github.io',
-  base: '/', 
+  base: '/lecamthanhha.github.io/', 
   integrations: [mdx(), tailwind()]
 });
