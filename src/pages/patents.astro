@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Patents | Cam Thanh Ha LE" sideBarActiveItemID="patents">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Intellectual Property & Patents</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    My work at the intersection of <b>Applied Mathematics</b> and <b>Embedded AI</b> has resulted in several technological breakthroughs. Currently, I am the author of 6 research patents focusing on Ultra-Wideband (UWB) systems, signal processing, and secure localization.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-2xl w-full font-bold">Featured Inventions</div>
+  </div>
+
+  <HorizontalCard
+    title="Machine Learning for Time of Flight (ToF) Plausibility"
+    img="/patent_uwb.webp" 
+    desc="Algorithm for attack detection and plausibility assessment in UWB ranging. This invention improves the security of distance estimation against RF noise and relay attacks."
+    url="#"
+    badge="US Patent 63/431,772"
+  />
+  
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Advanced Multipath Mitigation in RTLS"
+    img="/patent_rtls.webp"
+    desc="A system-level solution for improving localization accuracy in complex indoor environments. This algorithm reduces error caused by signal reflection in Real-Time Localization Systems."
+    url="#"
+    badge="Pending (Qorvo Inc)"
+  />
+
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Innovative Secure Entry for Automotive Systems"
+    img="/patent_auto.webp"
+    desc="A patent-pending method for automotive secure entry using UWB radar and ranging fusion, ensuring low-latency response and high robust against distance spoofing."
+    url="#"
+    badge="Pending (Qorvo Inc)"
+  />
+
+  <div class="mt-10 p-6 bg-base-200 rounded-xl border-l-4 border-primary">
+    <h3 class="font-bold mb-2">Technical Portfolio Summary</h3>
+    <ul class="list-disc ml-5 space-y-2">
+        <li><b>3 Patents</b> in High-Precision RTLS Localization.</li>
+        <li><b>2 Patents</b> in Automotive Secure Entry & Radar Fusion.</li>
+        <li><b>1 Patent</b> in UWB Physical Layer Security (ToF assessment).</li>
+    </ul>
+    <p class="mt-4 text-sm italic">Note: Specific patent titles and full documentation may be restricted due to NDA and pending status at the USPTO/EPO.</p>
+  </div>
+</BaseLayout>
