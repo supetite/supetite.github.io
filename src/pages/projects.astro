@@ -5,47 +5,35 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Research & Engineering Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
+    title="Constraining Latent Space for Medical Diagnosis"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Developed a Deep Learning approach for skin disease classification, presented during a seminar at Torus AI. The project focused on 'Explainable AI' (XAI) by constraining the neural network's latent space to align with specific clinical characteristics, ensuring that model predictions are interpretable by medical professionals."
     url="#"
-    badge="NEW"
+    badge="Research / XAI"
   />
+  
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
 
   <HorizontalCard
-    title="Demo Project 3"
+    title="Deep Image Prior for Inverse Problems"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Applied Convolutional Neural Networks (CNNs) to solve inverse problems in image processing without the need for large training datasets. Implemented Deep Image Prior techniques for high-quality image restoration, including inpainting, denoising, and super-resolution."
     url="#"
-    badge="FOSS"
+    badge="Computer Vision / Image Processing"
   />
+
+
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Demo Project 4"
+    title="Sentiment Analysis Optimization (IA Pau)"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Winner of the Data Challenge 2022 IA Pau. Developed an NLP pipeline optimized for the Boavizta project, balancing sentiment analysis accuracy with environmental impact. Focused on reducing the carbon footprint of AI model training and inference."
     url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    badge="Award Winner"
   />
 </BaseLayout>
